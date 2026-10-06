@@ -1,0 +1,286 @@
+.wpsb .nav-tab-wrapper {
+	margin-bottom: 16px;
+}
+
+.wpsb-mailers {
+	display: grid;
+	grid-template-columns: repeat(auto-fill, minmax(220px, 1fr));
+	gap: 12px;
+	max-width: 960px;
+}
+
+.wpsb-mailer {
+	display: flex;
+	flex-direction: column;
+	gap: 4px;
+	padding: 12px 14px;
+	background: #fff;
+	border: 1px solid #c3c4c7;
+	border-radius: 6px;
+	cursor: pointer;
+}
+
+.wpsb-mailer input[type="radio"] {
+	margin: 0 0 4px;
+}
+
+.wpsb-mailer span {
+	color: #646970;
+	font-size: 12px;
+	line-height: 1.4;
+}
+
+.wpsb-mailer.is-selected {
+	border-color: #2271b1;
+	box-shadow: 0 0 0 1px #2271b1;
+}
+
+.wpsb-mailer:focus-within {
+	outline: 2px solid #2271b1;
+	outline-offset: 1px;
+}
+
+.wpsb-badge {
+	display: inline-block;
+	padding: 2px 8px;
+	background: #f0f6fc;
+	border: 1px solid #c5d9ed;
+	border-radius: 10px;
+	color: #135e96;
+	font-size: 12px;
+}
+
+.wpsb-clear {
+	margin-left: 8px;
+	color: #646970;
+}
+
+.wpsb-hint {
+	color: #1d2327;
+}
+
+.wpsb-events td {
+	vertical-align: top;
+}
+
+.wpsb-events .wpsb-hint {
+	display: inline-block;
+	margin-top: 4px;
+	color: #646970;
+}
+
+.wpsb-level {
+	display: inline-block;
+	padding: 0 6px;
+	border-radius: 3px;
+	font-size: 11px;
+	text-transform: uppercase;
+}
+
+.wpsb-level-error {
+	background: #fcf0f1;
+	color: #b32d2e;
+}
+
+.wpsb-level-warning {
+	background: #fcf9e8;
+	color: #8a6d00;
+}
+
+.wpsb-transcript {
+	max-width: 960px;
+	margin: 12px 0;
+}
+
+.wpsb-transcript pre {
+	max-height: 360px;
+	overflow: auto;
+	padding: 12px;
+	background: #1d2327;
+	color: #f0f0f1;
+	font-size: 12px;
+	white-space: pre-wrap;
+	word-break: break-all;
+}
+
+.wpsb-status {
+	display: inline-block;
+	padding: 1px 8px;
+	border-radius: 10px;
+	font-size: 12px;
+}
+
+.wpsb-status-sent {
+	background: #edfaef;
+	color: #00651d;
+}
+
+.wpsb-status-failed {
+	background: #fcf0f1;
+	color: #b32d2e;
+}
+
+.wpsb .column-status,
+.wpsb .column-mailer {
+	width: 110px;
+}
+
+.wpsb .column-date {
+	width: 150px;
+}
+
+.wpsb-entry,
+.wpsb-domain {
+	max-width: 960px;
+}
+
+.wpsb-entry th,
+.wpsb-domain th {
+	width: 200px;
+	font-weight: 600;
+}
+
+.wpsb-preview {
+	display: block;
+	width: 100%;
+	max-width: 960px;
+	height: 520px;
+	background: #fff;
+	border: 1px solid #c3c4c7;
+}
+
+.wpsb-text-body {
+	max-width: 960px;
+	max-height: 520px;
+	overflow: auto;
+	padding: 12px;
+	background: #fff;
+	border: 1px solid #c3c4c7;
+	white-space: pre-wrap;
+}
+
+.wpsb-entry-actions .button {
+	margin-right: 6px;
+}
+
+.wpsb-clear-log {
+	margin-top: 16px;
+}
+
+.wpsb-domain-form {
+	margin: 12px 0;
+}
+
+.wpsb-domain td {
+	vertical-align: top;
+}
+
+.wpsb-domain code {
+	display: inline-block;
+	margin-top: 6px;
+	word-break: break-all;
+}
+
+.wpsb-dns-pass .dashicons {
+	color: #00a32a;
+}
+
+.wpsb-dns-warn .dashicons {
+	color: #dba617;
+}
+
+.wpsb-dns-fail .dashicons {
+	color: #d63638;
+}
+
+.wpsb-dns-info .dashicons {
+	color: #2271b1;
+}
+
+.wpsb-ok {
+	color: #00a32a;
+}
+
+.wpsb-warning {
+	color: #996800;
+}
+
+.wpsb-copy {
+	user-select: all;
+}
+
+.wpsb-setup {
+	max-width: 640px;
+	margin-top: 8px;
+}
+
+.wpsb-setup summary {
+	cursor: pointer;
+	color: #2271b1;
+}
+
+.wpsb-wizard-card {
+	max-width: 960px;
+	margin-top: 16px;
+	padding: 8px 24px 16px;
+	background: #fff;
+	border: 1px solid #c3c4c7;
+	border-radius: 8px;
+}
+
+.wpsb-steps {
+	display: flex;
+	flex-wrap: wrap;
+	gap: 8px;
+	margin: 16px 0 0;
+	padding: 0;
+	list-style: none;
+	counter-reset: wpsb-step;
+}
+
+.wpsb-steps li {
+	margin: 0;
+	padding: 4px 12px 4px 8px;
+	border-radius: 16px;
+	background: #f0f0f1;
+	color: #50575e;
+	counter-increment: wpsb-step;
+}
+
+.wpsb-steps li::before {
+	content: counter(wpsb-step) ". ";
+}
+
+.wpsb-steps li.is-done {
+	background: #edfaef;
+	color: #00651d;
+}
+
+.wpsb-steps li.is-current {
+	background: #2271b1;
+	color: #fff;
+	font-weight: 600;
+}
+
+.wpsb-wizard-buttons .button {
+	margin-right: 6px;
+}
+
+.wpsb-wizard-exit {
+	margin-top: 16px;
+}
+
+.wpsb-next li {
+	list-style: disc;
+	margin-left: 20px;
+}
+
+@media (prefers-reduced-motion: no-preference) {
+	.wpsb-mailer {
+		transition: border-color 0.1s ease-in-out, box-shadow 0.1s ease-in-out;
+	}
+}
+
+.wpsb-transfer {
+	margin: 12px 0;
+}

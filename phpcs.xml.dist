@@ -1,0 +1,41 @@
+<?xml version="1.0"?>
+<ruleset name="WP SMTP Buddy">
+	<file>.</file>
+	<exclude-pattern>/vendor/*</exclude-pattern>
+	<exclude-pattern>/tests/*</exclude-pattern>
+	<exclude-pattern>/assets/*</exclude-pattern>
+	<arg name="extensions" value="php"/>
+	<arg value="sp"/>
+
+	<config name="minimum_wp_version" value="6.4"/>
+	<config name="testVersion" value="8.1-"/>
+
+	<rule ref="WordPress">
+		<!-- PSR-4 file names instead of class-*.php. -->
+		<exclude name="WordPress.Files.FileName"/>
+		<!-- Doc comments are added where they explain something, not on every member. -->
+		<exclude name="Squiz.Commenting"/>
+		<exclude name="Generic.Commenting.DocComment.MissingShort"/>
+		<!-- Short ternaries are fine on PHP 8.1. -->
+		<exclude name="Universal.Operators.DisallowShortTernary"/>
+		<!-- PHPMailer's public properties are CamelCase (Host, Port, SMTPAuth…). -->
+		<exclude name="WordPress.NamingConventions.ValidVariableName.UsedPropertyNotSnakeCase"/>
+	</rule>
+
+	<rule ref="WordPress.WP.I18n">
+		<properties>
+			<property name="text_domain" type="array">
+				<element value="wp-smtp-buddy"/>
+			</property>
+		</properties>
+	</rule>
+
+	<rule ref="WordPress.NamingConventions.PrefixAllGlobals">
+		<properties>
+			<property name="prefixes" type="array">
+				<element value="wpsb"/>
+				<element value="SmtpBuddy"/>
+			</property>
+		</properties>
+	</rule>
+</ruleset>

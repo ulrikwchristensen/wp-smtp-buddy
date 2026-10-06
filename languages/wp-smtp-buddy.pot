@@ -1,0 +1,1995 @@
+# Copyright (C) 2026 Ulrik
+# This file is distributed under the GPL-2.0-or-later.
+msgid ""
+msgstr ""
+"Project-Id-Version: WP SMTP Buddy 1.0.0\n"
+"Report-Msgid-Bugs-To: https://wordpress.org/support/plugin/wp-smtp-buddy\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"POT-Creation-Date: 2026-10-05T13:52:01+00:00\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"X-Generator: WP-CLI 2.12.0\n"
+"X-Domain: wp-smtp-buddy\n"
+
+#. Plugin Name of the plugin
+#: wp-smtp-buddy.php
+#: src/Admin/Page.php:74
+#: src/Admin/Page.php:118
+#: src/Log/Privacy.php:138
+#: src/Support/SiteHealth.php:242
+msgid "WP SMTP Buddy"
+msgstr ""
+
+#. Description of the plugin
+#: wp-smtp-buddy.php
+msgid "Send all WordPress email through authenticated SMTP or a transactional email API (Amazon SES, Brevo, Gmail / Google Workspace, Mailgun, MailerSend, Mailjet, Microsoft 365, Postmark, Resend, SendGrid, SMTP2GO)."
+msgstr ""
+
+#. Author of the plugin
+#: wp-smtp-buddy.php
+msgid "Ulrik"
+msgstr ""
+
+#: src/Admin/Actions.php:117
+msgid "The network administrator doesn't allow sites to use their own settings."
+msgstr ""
+
+#: src/Admin/Actions.php:157
+msgid "This site uses the network email settings. Switch to custom settings first."
+msgstr ""
+
+#: src/Admin/Actions.php:169
+msgid "Choose a WP SMTP Buddy settings file (.json, at most 512 KB)."
+msgstr ""
+
+#: src/Admin/Actions.php:207
+msgid "This site uses the network email settings, which only network administrators can change."
+msgstr ""
+
+#: src/Admin/Actions.php:223
+#: src/Admin/LogScreen.php:71
+#: src/Admin/Wizard.php:153
+#: src/Auth/OAuthController.php:161
+msgid "You are not allowed to manage WP SMTP Buddy."
+msgstr ""
+
+#: src/Admin/DomainScreen.php:32
+msgid "Receiving mail servers check these DNS records to decide whether email from your domain is genuine. Missing records are the most common reason email lands in spam."
+msgstr ""
+
+#: src/Admin/DomainScreen.php:38
+msgid "Domain"
+msgstr ""
+
+#: src/Admin/DomainScreen.php:41
+msgid "Check"
+msgstr ""
+
+#: src/Admin/DomainScreen.php:50
+msgid "Lists the servers allowed to send email for the domain."
+msgstr ""
+
+#: src/Admin/DomainScreen.php:51
+msgid "A signature that proves the email wasn't changed and came from your domain."
+msgstr ""
+
+#: src/Admin/DomainScreen.php:52
+msgid "Tells receivers what to do with email that fails SPF and DKIM."
+msgstr ""
+
+#: src/Admin/DomainScreen.php:55
+msgid "OK"
+msgstr ""
+
+#: src/Admin/DomainScreen.php:56
+msgid "Needs attention"
+msgstr ""
+
+#: src/Admin/DomainScreen.php:57
+msgid "Problem"
+msgstr ""
+
+#: src/Admin/DomainScreen.php:58
+msgid "Info"
+msgstr ""
+
+#. translators: 1: domain, 2: mailer name
+#: src/Admin/DomainScreen.php:66
+#, php-format
+msgid "Results for %1$s with %2$s. Results are cached for 12 hours. DNS changes can take a while to appear."
+msgstr ""
+
+#: src/Admin/EmailLogTable.php:71
+#: src/Alerts/Alerts.php:288
+#: src/Log/Privacy.php:64
+msgid "Subject"
+msgstr ""
+
+#: src/Admin/EmailLogTable.php:72
+#: src/Admin/LogScreen.php:239
+#: src/Admin/Page.php:579
+#: src/Alerts/Alerts.php:300
+#: src/Support/TestEmail.php:76
+msgid "Site"
+msgstr ""
+
+#: src/Admin/EmailLogTable.php:73
+#: src/Admin/LogScreen.php:242
+#: src/Log/Privacy.php:63
+msgid "To"
+msgstr ""
+
+#: src/Admin/EmailLogTable.php:74
+#: src/Admin/LogScreen.php:236
+#: src/Log/Privacy.php:61
+msgid "Status"
+msgstr ""
+
+#: src/Admin/EmailLogTable.php:75
+#: src/Admin/LogScreen.php:238
+#: src/Admin/Page.php:247
+#: src/Admin/Page.php:576
+#: src/Admin/Wizard.php:34
+#: src/Alerts/Alerts.php:289
+#: src/Support/SiteHealth.php:249
+#: src/Support/TestEmail.php:75
+msgid "Mailer"
+msgstr ""
+
+#: src/Admin/EmailLogTable.php:76
+#: src/Admin/LogScreen.php:240
+msgid "Sent by"
+msgstr ""
+
+#: src/Admin/EmailLogTable.php:77
+#: src/Admin/LogScreen.php:237
+#: src/Admin/Page.php:576
+#: src/Log/Privacy.php:60
+#: src/Log/Privacy.php:97
+msgid "Date"
+msgstr ""
+
+#: src/Admin/EmailLogTable.php:86
+#: src/Admin/EmailLogTable.php:166
+#: src/Admin/LogScreen.php:321
+msgid "Resend"
+msgstr ""
+
+#: src/Admin/EmailLogTable.php:87
+#: src/Admin/EmailLogTable.php:167
+#: src/Admin/LogScreen.php:327
+msgid "Delete"
+msgstr ""
+
+#: src/Admin/EmailLogTable.php:99
+msgid "All"
+msgstr ""
+
+#: src/Admin/EmailLogTable.php:100
+#: src/Admin/EmailLogTable.php:182
+#: src/Admin/LogScreen.php:236
+#: src/Support/TestEmail.php:77
+msgid "Sent"
+msgstr ""
+
+#: src/Admin/EmailLogTable.php:101
+#: src/Admin/EmailLogTable.php:182
+#: src/Admin/LogScreen.php:236
+msgid "Failed"
+msgstr ""
+
+#: src/Admin/EmailLogTable.php:129
+msgid "Filter by site"
+msgstr ""
+
+#: src/Admin/EmailLogTable.php:130
+msgid "All sites"
+msgstr ""
+
+#: src/Admin/EmailLogTable.php:137
+msgid "Filter"
+msgstr ""
+
+#: src/Admin/EmailLogTable.php:149
+msgid "No emails logged yet."
+msgstr ""
+
+#: src/Admin/EmailLogTable.php:165
+msgid "View"
+msgstr ""
+
+#: src/Admin/EmailLogTable.php:173
+#: src/Admin/LogScreen.php:200
+#: src/Alerts/Alerts.php:288
+msgid "(no subject)"
+msgstr ""
+
+#: src/Admin/EmailLogTable.php:186
+msgid "via backup mailer"
+msgstr ""
+
+#. translators: %d: log entry ID
+#: src/Admin/EmailLogTable.php:191
+#, php-format
+msgid "Resend of #%d"
+msgstr ""
+
+#. translators: %s: human-readable time difference
+#: src/Admin/EmailLogTable.php:233
+#, php-format
+msgid "%s ago"
+msgstr ""
+
+#: src/Admin/Fields.php:35
+#: src/Support/SiteHealth.php:254
+msgid "From Email"
+msgstr ""
+
+#: src/Admin/Fields.php:37
+msgid "The address emails are sent from. Most mailers require an address on a domain you have verified with them."
+msgstr ""
+
+#: src/Admin/Fields.php:40
+msgid "Force From Email"
+msgstr ""
+
+#: src/Admin/Fields.php:42
+msgid "Use the From Email for all emails, even when another plugin sets its own sender. Recommended, because most mailers reject unverified senders."
+msgstr ""
+
+#: src/Admin/Fields.php:45
+msgid "From Name"
+msgstr ""
+
+#: src/Admin/Fields.php:47
+msgid "For example, your site or company name."
+msgstr ""
+
+#: src/Admin/Fields.php:50
+msgid "Force From Name"
+msgstr ""
+
+#: src/Admin/Fields.php:52
+msgid "Use the From Name for all emails, even when another plugin sets its own."
+msgstr ""
+
+#: src/Admin/Fields.php:55
+msgid "Return Path"
+msgstr ""
+
+#: src/Admin/Fields.php:58
+msgid "Set the Return-Path (bounce address) to the From Email."
+msgstr ""
+
+#: src/Admin/Fields.php:69
+#: src/Support/SiteHealth.php:259
+msgid "Email log"
+msgstr ""
+
+#: src/Admin/Fields.php:72
+msgid "Keep a record of every email WordPress sends, with its delivery status."
+msgstr ""
+
+#: src/Admin/Fields.php:75
+msgid "What to store"
+msgstr ""
+
+#: src/Admin/Fields.php:79
+msgid "Headers and message content"
+msgstr ""
+
+#: src/Admin/Fields.php:80
+msgid "Recipients, subject and status only"
+msgstr ""
+
+#: src/Admin/Fields.php:82
+msgid "Storing the content lets you view and resend emails. Only metadata is more privacy-friendly, but resending is then not possible."
+msgstr ""
+
+#: src/Admin/Fields.php:85
+msgid "Store attachments"
+msgstr ""
+
+#: src/Admin/Fields.php:88
+msgid "Keep copies of attachments so they are included when an email is resent. Uses disk space."
+msgstr ""
+
+#: src/Admin/Fields.php:91
+msgid "Keep emails for"
+msgstr ""
+
+#: src/Admin/Fields.php:96
+#: src/Admin/Fields.php:239
+msgid "days"
+msgstr ""
+
+#: src/Admin/Fields.php:105
+#: src/Mail/Mailers/Smtp.php:47
+#: src/Support/SiteHealth.php:264
+#: src/Support/SiteHealth.php:276
+msgid "None"
+msgstr ""
+
+#: src/Admin/Fields.php:115
+#: src/Alerts/Alerts.php:293
+#: src/Support/SiteHealth.php:263
+msgid "Backup mailer"
+msgstr ""
+
+#: src/Admin/Fields.php:119
+msgid "If the main mailer fails, the email is sent again with this one. Choose a different mailer and fill in its settings below."
+msgstr ""
+
+#: src/Admin/Fields.php:130
+msgid "Slack webhook URL"
+msgstr ""
+
+#: src/Admin/Fields.php:134
+msgid "Create an incoming webhook in a Slack app (api.slack.com/apps → Incoming Webhooks). It starts with https://hooks.slack.com/."
+msgstr ""
+
+#: src/Admin/Fields.php:137
+msgid "Discord webhook URL"
+msgstr ""
+
+#: src/Admin/Fields.php:141
+msgid "In Discord: channel settings → Integrations → Webhooks → New Webhook → Copy Webhook URL."
+msgstr ""
+
+#: src/Admin/Fields.php:144
+msgid "Microsoft Teams webhook URL"
+msgstr ""
+
+#: src/Admin/Fields.php:148
+msgid "In Teams: channel → Workflows → \"Post to a channel when a webhook request is received\", then copy the URL."
+msgstr ""
+
+#: src/Admin/Fields.php:151
+msgid "Alert when the backup is used"
+msgstr ""
+
+#: src/Admin/Fields.php:154
+msgid "The email was delivered, but the main mailer needs fixing."
+msgstr ""
+
+#: src/Admin/Fields.php:157
+msgid "At most one alert every"
+msgstr ""
+
+#: src/Admin/Fields.php:162
+msgid "minutes per channel (0 = no limit)"
+msgstr ""
+
+#: src/Admin/Fields.php:163
+msgid "Alerts held back during this time are counted in the next alert."
+msgstr ""
+
+#: src/Admin/Fields.php:174
+msgid "Send in the background"
+msgstr ""
+
+#: src/Admin/Fields.php:177
+msgid "Queue emails and send them with WP-Cron, so pages that send email respond faster. Failed emails are retried twice. Requires WP-Cron to run regularly (a real server cron job is recommended on low-traffic sites)."
+msgstr ""
+
+#: src/Admin/Fields.php:180
+msgid "Rate limit"
+msgstr ""
+
+#: src/Admin/Fields.php:185
+msgid "emails per minute (0 = no limit)"
+msgstr ""
+
+#: src/Admin/Fields.php:186
+msgid "Applies to queued emails. Use it to stay within your provider's sending rate."
+msgstr ""
+
+#: src/Admin/Fields.php:204
+msgid "Send"
+msgstr ""
+
+#: src/Admin/Fields.php:220
+msgid "Site settings"
+msgstr ""
+
+#: src/Admin/Fields.php:223
+msgid "Let site administrators switch to their own mailer and settings. When off, every site uses these network settings and site administrators can't change them."
+msgstr ""
+
+#: src/Admin/Fields.php:234
+msgid "Keep debug events for"
+msgstr ""
+
+#: src/Admin/Fields.php:242
+msgid "Delete data on uninstall"
+msgstr ""
+
+#: src/Admin/Fields.php:244
+msgid "Remove all settings, credentials and logs when the plugin is deleted."
+msgstr ""
+
+#: src/Admin/Fields.php:364
+msgid "Enabled"
+msgstr ""
+
+#: src/Admin/Fields.php:382
+msgid "(saved, type to replace)"
+msgstr ""
+
+#: src/Admin/Fields.php:387
+msgid "A value is saved. Leave empty to keep it, or type a new value to replace it."
+msgstr ""
+
+#: src/Admin/Fields.php:393
+msgid "Remove"
+msgstr ""
+
+#. translators: %s: constant name
+#: src/Admin/Fields.php:428
+#: src/Admin/Page.php:253
+#, php-format
+msgid "Set by %s in wp-config.php"
+msgstr ""
+
+#: src/Admin/LogScreen.php:147
+msgid "Email not found. It may have been deleted."
+msgstr ""
+
+#: src/Admin/LogScreen.php:151
+msgid "The email log is being set up. Reload this page."
+msgstr ""
+
+#: src/Admin/LogScreen.php:159
+msgid "The email log is turned off, so new emails are not recorded."
+msgstr ""
+
+#: src/Admin/LogScreen.php:161
+msgid "Turn it on in Settings."
+msgstr ""
+
+#: src/Admin/LogScreen.php:180
+msgid "Search emails"
+msgstr ""
+
+#: src/Admin/LogScreen.php:187
+msgid "Delete every email in the log? This cannot be undone."
+msgstr ""
+
+#: src/Admin/LogScreen.php:192
+msgid "Delete All Emails"
+msgstr ""
+
+#: src/Admin/LogScreen.php:199
+msgid "Back to the email log"
+msgstr ""
+
+#: src/Admin/LogScreen.php:205
+msgid "This email failed to send."
+msgstr ""
+
+#: src/Admin/LogScreen.php:209
+#: src/Admin/Page.php:543
+#: src/Admin/Wizard.php:358
+msgid "How to fix it:"
+msgstr ""
+
+#. translators: 1: primary mailer, 2: backup mailer
+#: src/Admin/LogScreen.php:221
+#, php-format
+msgid "Sent with the backup mailer (%2$s) because %1$s failed:"
+msgstr ""
+
+#: src/Admin/LogScreen.php:241
+#: src/Log/Privacy.php:62
+msgid "From"
+msgstr ""
+
+#: src/Admin/LogScreen.php:246
+msgid "Cc"
+msgstr ""
+
+#: src/Admin/LogScreen.php:247
+msgid "Bcc"
+msgstr ""
+
+#: src/Admin/LogScreen.php:248
+msgid "Reply-To"
+msgstr ""
+
+#: src/Admin/LogScreen.php:258
+msgid "Provider message ID"
+msgstr ""
+
+#: src/Admin/LogScreen.php:269
+msgid "Resend of"
+msgstr ""
+
+#: src/Admin/LogScreen.php:281
+msgid "Attachments"
+msgstr ""
+
+#: src/Admin/LogScreen.php:288
+msgid "Other headers"
+msgstr ""
+
+#: src/Admin/LogScreen.php:294
+#: src/Log/Privacy.php:68
+msgid "Message"
+msgstr ""
+
+#: src/Admin/LogScreen.php:305
+msgid "Remote images are blocked."
+msgstr ""
+
+#: src/Admin/LogScreen.php:307
+msgid "Load remote images"
+msgstr ""
+
+#: src/Admin/LogScreen.php:311
+msgid "Message preview"
+msgstr ""
+
+#: src/Admin/LogScreen.php:317
+msgid "Plain-text version"
+msgstr ""
+
+#: src/Admin/LogScreen.php:323
+msgid "The message content was not stored (the log is set to store recipients, subject and status only), so it can't be shown or resent."
+msgstr ""
+
+#: src/Admin/Notices.php:56
+msgid "WP SMTP Buddy is active, but email is still sent with PHP mail(). Choose a mailer to improve deliverability."
+msgstr ""
+
+#: src/Admin/Notices.php:58
+msgid "Run the setup wizard"
+msgstr ""
+
+#. translators: %s: mailer name
+#: src/Admin/Notices.php:64
+#, php-format
+msgid "WP SMTP Buddy: %s is missing required settings, so email is sent with PHP mail()."
+msgstr ""
+
+#. translators: %s: mailer name
+#: src/Admin/Notices.php:74
+#, php-format
+msgid "WP SMTP Buddy: the %s connection stopped working. Sign in again to keep sending email."
+msgstr ""
+
+#. translators: %s: PHP class name
+#: src/Admin/Notices.php:86
+#, php-format
+msgid "WP SMTP Buddy: another plugin replaced WordPress's mailer (%s). Only the SMTP mailer works in this situation. Deactivate the other email plugin to use the API mailers."
+msgstr ""
+
+#. translators: %s: plugin name
+#: src/Admin/Notices.php:99
+#, php-format
+msgid "WP SMTP Buddy: %s is also active. Two email plugins will conflict. Deactivate one of them."
+msgstr ""
+
+#: src/Admin/Notices.php:109
+msgid "Open settings"
+msgstr ""
+
+#: src/Admin/Page.php:75
+msgid "SMTP Buddy"
+msgstr ""
+
+#: src/Admin/Page.php:100
+#: src/Admin/Page.php:107
+msgid "Settings"
+msgstr ""
+
+#: src/Admin/Page.php:108
+#: src/Admin/Page.php:319
+msgid "Email Log"
+msgstr ""
+
+#: src/Admin/Page.php:109
+msgid "Send Test"
+msgstr ""
+
+#: src/Admin/Page.php:110
+msgid "Domain Check"
+msgstr ""
+
+#: src/Admin/Page.php:111
+msgid "Debug Events"
+msgstr ""
+
+#: src/Admin/Page.php:118
+msgid "WP SMTP Buddy: Network"
+msgstr ""
+
+#: src/Admin/Page.php:121
+msgid "Setup wizard"
+msgstr ""
+
+#: src/Admin/Page.php:171
+msgid "Sign-in failed."
+msgstr ""
+
+#. translators: %s: mailer name
+#: src/Admin/Page.php:182
+#, php-format
+msgid "%s is connected. Send a test email to check it."
+msgstr ""
+
+#. translators: %s: mailer name
+#: src/Admin/Page.php:184
+#, php-format
+msgid "%s was disconnected."
+msgstr ""
+
+#: src/Admin/Page.php:185
+msgid "Settings saved."
+msgstr ""
+
+#: src/Admin/Page.php:186
+msgid "Debug events cleared."
+msgstr ""
+
+#: src/Admin/Page.php:187
+msgid "Email log cleared."
+msgstr ""
+
+#. translators: %s: number of settings
+#: src/Admin/Page.php:189
+#, php-format
+msgid "Imported %s settings. Secrets that were not in the file were kept."
+msgstr ""
+
+#: src/Admin/Page.php:190
+msgid "This site now uses its own email settings. Choose a mailer and enter its credentials below (sender and log preferences were copied from the network)."
+msgstr ""
+
+#: src/Admin/Page.php:191
+msgid "This site now uses the network email settings."
+msgstr ""
+
+#. translators: %s: number of emails
+#: src/Admin/Page.php:193
+#, php-format
+msgid "%s email deleted."
+msgid_plural "%s emails deleted."
+msgstr[0] ""
+msgstr[1] ""
+
+#. translators: %s: number of emails
+#: src/Admin/Page.php:195
+#, php-format
+msgid "%s email resent."
+msgid_plural "%s emails resent."
+msgstr[0] ""
+msgstr[1] ""
+
+#. translators: %s: list of field names
+#: src/Admin/Page.php:212
+#, php-format
+msgid "These values were not saved because they are not valid https:// URLs: %s."
+msgstr ""
+
+#. translators: %s: number of emails
+#: src/Admin/Page.php:225
+#, php-format
+msgid "%s email could not be resent. See the newest log entries for the error."
+msgid_plural "%s emails could not be resent. See the newest log entries for the errors."
+msgstr[0] ""
+msgstr[1] ""
+
+#. translators: %s: mailer name
+#: src/Admin/Page.php:281
+#, php-format
+msgid "%s settings"
+msgstr ""
+
+#: src/Admin/Page.php:284
+msgid "This mailer is missing required settings. Until they are filled in, email is sent with PHP mail()."
+msgstr ""
+
+#: src/Admin/Page.php:286
+msgid "This mailer is set as the backup but is missing required settings, so it won't be used."
+msgstr ""
+
+#: src/Admin/Page.php:296
+#: src/Admin/Wizard.php:36
+msgid "Sender"
+msgstr ""
+
+#: src/Admin/Page.php:301
+msgid "The backup mailer is the same as the main mailer, so it won't be used. Choose a different one."
+msgstr ""
+
+#: src/Admin/Page.php:304
+msgid "Backup Connection"
+msgstr ""
+
+#: src/Admin/Page.php:305
+msgid "Failure Alerts"
+msgstr ""
+
+#: src/Admin/Page.php:305
+msgid "Get a message in a chat channel when an email fails to send. Alerts include the subject and error. Recipients and other email addresses are left out."
+msgstr ""
+
+#. translators: %s: number of emails
+#: src/Admin/Page.php:313
+#, php-format
+msgid "%s email is waiting to be sent."
+msgid_plural "%s emails are waiting to be sent."
+msgstr[0] ""
+msgstr[1] ""
+
+#: src/Admin/Page.php:318
+msgid "Background Sending"
+msgstr ""
+
+#: src/Admin/Page.php:320
+msgid "Email Controls"
+msgstr ""
+
+#: src/Admin/Page.php:320
+msgid "Turn off WordPress notification emails you don't need. Emails from other plugins are not affected."
+msgstr ""
+
+#: src/Admin/Page.php:323
+msgid "Sites"
+msgstr ""
+
+#: src/Admin/Page.php:323
+msgid "These settings apply to every site in the network that doesn't use its own settings."
+msgstr ""
+
+#: src/Admin/Page.php:326
+msgid "Advanced"
+msgstr ""
+
+#. translators: %s: example constant
+#: src/Admin/Page.php:331
+#, php-format
+msgid "Tip: any setting can be locked in wp-config.php with a constant, for example %s."
+msgstr ""
+
+#: src/Admin/Page.php:347
+msgid "Export & Import"
+msgstr ""
+
+#: src/Admin/Page.php:348
+msgid "Copy these settings to another site. Passwords, API keys and webhook URLs are left out unless you include them."
+msgstr ""
+
+#: src/Admin/Page.php:354
+msgid "Include passwords, API keys and webhook URLs (in plain text)"
+msgstr ""
+
+#: src/Admin/Page.php:355
+msgid "Export Settings"
+msgstr ""
+
+#: src/Admin/Page.php:362
+msgid "Settings file"
+msgstr ""
+
+#: src/Admin/Page.php:363
+msgid "Import Settings"
+msgstr ""
+
+#. translators: %s: mailer name
+#: src/Admin/Page.php:381
+#, php-format
+msgid "Email for this site is managed by the network administrator. Mailer: %s."
+msgstr ""
+
+#: src/Admin/Page.php:394
+msgid "This site uses its own email settings instead of the network settings."
+msgstr ""
+
+#. translators: %s: mailer name
+#: src/Admin/Page.php:396
+#, php-format
+msgid "This site uses the network email settings (mailer: %s)."
+msgstr ""
+
+#: src/Admin/Page.php:403
+msgid "Use the network settings"
+msgstr ""
+
+#: src/Admin/Page.php:403
+msgid "Use custom settings for this site"
+msgstr ""
+
+#. translators: %s: mailer name
+#: src/Admin/Page.php:448
+#, php-format
+msgid "Send a test email with the current mailer: %s."
+msgstr ""
+
+#: src/Admin/Page.php:456
+#: src/Admin/Wizard.php:368
+msgid "Send to"
+msgstr ""
+
+#: src/Admin/Page.php:461
+msgid "HTML"
+msgstr ""
+
+#: src/Admin/Page.php:462
+msgid "Send as HTML"
+msgstr ""
+
+#: src/Admin/Page.php:466
+#: src/Admin/Wizard.php:373
+msgid "Send Test Email"
+msgstr ""
+
+#. translators: %s: mailer name
+#: src/Admin/Page.php:473
+#, php-format
+msgid "If it fails, the backup mailer (%s) is tried as well."
+msgstr ""
+
+#: src/Admin/Page.php:480
+msgid "Test Alerts"
+msgstr ""
+
+#: src/Admin/Page.php:492
+msgid "Test alert delivered."
+msgstr ""
+
+#: src/Admin/Page.php:502
+msgid "No alert channels are set up yet."
+msgstr ""
+
+#: src/Admin/Page.php:504
+msgid "Add a webhook URL in Settings → Failure Alerts."
+msgstr ""
+
+#. translators: %s: list of channels
+#: src/Admin/Page.php:515
+#, php-format
+msgid "Send a test alert to: %s."
+msgstr ""
+
+#: src/Admin/Page.php:516
+msgid "Send Test Alert"
+msgstr ""
+
+#. translators: 1: recipient, 2: mailer name
+#: src/Admin/Page.php:530
+#, php-format
+msgid "Test email sent to %1$s with %2$s. Check the inbox (and the spam folder)."
+msgstr ""
+
+#. translators: %s: mailer name
+#: src/Admin/Page.php:539
+#, php-format
+msgid "The test email could not be sent with %s."
+msgstr ""
+
+#: src/Admin/Page.php:540
+msgid "Unknown error."
+msgstr ""
+
+#: src/Admin/Page.php:550
+msgid "SMTP conversation (passwords removed)"
+msgstr ""
+
+#. translators: %d: number of days
+#: src/Admin/Page.php:564
+#, php-format
+msgid "Errors and warnings from the last %d days. Message content is not stored."
+msgstr ""
+
+#: src/Admin/Page.php:570
+msgid "No events. Everything is running smoothly."
+msgstr ""
+
+#: src/Admin/Page.php:576
+msgid "Event"
+msgstr ""
+
+#: src/Admin/Page.php:576
+#: src/Support/SiteHealth.php:297
+msgid "Email"
+msgstr ""
+
+#: src/Admin/Page.php:635
+msgid "Clear All Events"
+msgstr ""
+
+#: src/Admin/Wizard.php:35
+msgid "Connect"
+msgstr ""
+
+#: src/Admin/Wizard.php:37
+msgid "Test"
+msgstr ""
+
+#: src/Admin/Wizard.php:38
+msgid "Done"
+msgstr ""
+
+#: src/Admin/Wizard.php:64
+msgid "WP SMTP Buddy setup"
+msgstr ""
+
+#: src/Admin/Wizard.php:110
+msgid "Set up WP SMTP Buddy"
+msgstr ""
+
+#: src/Admin/Wizard.php:113
+msgid "This site uses the network email settings, so there is nothing to set up here."
+msgstr ""
+
+#: src/Admin/Wizard.php:142
+msgid "Exit setup and go to the settings"
+msgstr ""
+
+#: src/Admin/Wizard.php:159
+msgid "This site uses the network email settings."
+msgstr ""
+
+#: src/Admin/Wizard.php:240
+msgid "Some required settings are still missing. Fill them in to continue."
+msgstr ""
+
+#: src/Admin/Wizard.php:241
+msgid "Saved. Now sign in with the button below to connect your account."
+msgstr ""
+
+#: src/Admin/Wizard.php:242
+msgid "A value was not valid and was not saved. Check the fields below."
+msgstr ""
+
+#: src/Admin/Wizard.php:262
+#: src/Admin/Wizard.php:372
+msgid "Back"
+msgstr ""
+
+#: src/Admin/Wizard.php:272
+msgid "How should WordPress send email?"
+msgstr ""
+
+#: src/Admin/Wizard.php:273
+msgid "Pick the service you use. If you're not sure, choose \"Other SMTP\" and use the SMTP details from your email or hosting provider."
+msgstr ""
+
+#: src/Admin/Wizard.php:295
+#: src/Admin/Wizard.php:320
+#: src/Admin/Wizard.php:339
+#: src/Admin/Wizard.php:376
+msgid "Continue"
+msgstr ""
+
+#. translators: %s: mailer name
+#: src/Admin/Wizard.php:303
+#, php-format
+msgid "Connect %s"
+msgstr ""
+
+#: src/Admin/Wizard.php:306
+msgid "This mailer needs no settings."
+msgstr ""
+
+#: src/Admin/Wizard.php:320
+msgid "Save"
+msgstr ""
+
+#: src/Admin/Wizard.php:325
+msgid "Who should emails come from?"
+msgstr ""
+
+#: src/Admin/Wizard.php:326
+msgid "Use an address on a domain your mailer is allowed to send for. Otherwise emails are rejected or land in spam."
+msgstr ""
+
+#: src/Admin/Wizard.php:346
+msgid "Send a test email"
+msgstr ""
+
+#. translators: %s: recipient
+#: src/Admin/Wizard.php:353
+#, php-format
+msgid "Sent to %s. Check the inbox (and the spam folder), then continue."
+msgstr ""
+
+#: src/Admin/Wizard.php:355
+msgid "The test email could not be sent."
+msgstr ""
+
+#: src/Admin/Wizard.php:361
+msgid "Go back and change the settings"
+msgstr ""
+
+#: src/Admin/Wizard.php:378
+msgid "Skip"
+msgstr ""
+
+#: src/Admin/Wizard.php:385
+msgid "You're all set"
+msgstr ""
+
+#. translators: %s: mailer name
+#: src/Admin/Wizard.php:387
+#, php-format
+msgid "WordPress now sends email with %s. A few more things you may want to set up:"
+msgstr ""
+
+#: src/Admin/Wizard.php:390
+msgid "A backup mailer that takes over if this one fails"
+msgstr ""
+
+#: src/Admin/Wizard.php:391
+msgid "Alerts in Slack, Discord or Teams when an email fails"
+msgstr ""
+
+#: src/Admin/Wizard.php:392
+msgid "Check your domain's SPF, DKIM and DMARC records"
+msgstr ""
+
+#: src/Admin/Wizard.php:393
+msgid "See every email WordPress sends in the email log"
+msgstr ""
+
+#: src/Admin/Wizard.php:399
+msgid "Go to the settings"
+msgstr ""
+
+#. translators: %s: email address
+#: src/Admin/Wizard.php:410
+#, php-format
+msgid "Your connected account is %s."
+msgstr ""
+
+#: src/Alerts/Alerts.php:105
+msgid "Test alert"
+msgstr ""
+
+#: src/Alerts/Alerts.php:108
+msgid "This is a test. Alerts from WP SMTP Buddy will look like this."
+msgstr ""
+
+#. translators: 1: HTTP status code, 2: response body
+#: src/Alerts/Alerts.php:129
+#, php-format
+msgid "HTTP %1$d %2$s"
+msgstr ""
+
+#. translators: %s: site name
+#: src/Alerts/Alerts.php:280
+#, php-format
+msgid "Email sent with the backup mailer on %s"
+msgstr ""
+
+#. translators: %s: site name
+#: src/Alerts/Alerts.php:282
+#, php-format
+msgid "Test alert from %s"
+msgstr ""
+
+#. translators: %s: site name
+#: src/Alerts/Alerts.php:284
+#, php-format
+msgid "Email failed to send on %s"
+msgstr ""
+
+#: src/Alerts/Alerts.php:297
+msgid "Recipients"
+msgstr ""
+
+#. translators: %d: number of alerts
+#: src/Alerts/Alerts.php:308
+#, php-format
+msgid "%d similar alert was held back since the last one."
+msgid_plural "%d similar alerts were held back since the last one."
+msgstr[0] ""
+msgstr[1] ""
+
+#: src/Alerts/Alerts.php:321
+msgid "View the email in the log"
+msgstr ""
+
+#: src/Alerts/Alerts.php:321
+msgid "Open the email log"
+msgstr ""
+
+#: src/Auth/OAuthClient.php:78
+msgid "The provider did not return a refresh token, so the connection would stop working within an hour. Remove the app's access from your account and connect again."
+msgstr ""
+
+#. translators: %s: mailer name
+#: src/Auth/OAuthClient.php:105
+#, php-format
+msgid "%s is not connected. Open the WP SMTP Buddy settings and connect your account."
+msgstr ""
+
+#. translators: 1: provider name, 2: error code, 3: error description
+#: src/Auth/OAuthClient.php:232
+#, php-format
+msgid "%1$s sign-in error: %2$s. %3$s"
+msgstr ""
+
+#: src/Auth/OAuthController.php:91
+msgid "The sign-in link expired or was not started by you. Please try again."
+msgstr ""
+
+#: src/Auth/OAuthController.php:97
+msgid "Only network administrators can connect the network account."
+msgstr ""
+
+#: src/Auth/OAuthController.php:109
+#: src/Auth/OAuthController.php:170
+msgid "Unknown mailer."
+msgstr ""
+
+#: src/Auth/OAuthController.php:116
+msgid "Sign-in was cancelled or access was not granted."
+msgstr ""
+
+#: src/Auth/OAuthController.php:120
+msgid "The provider did not return an authorization code."
+msgstr ""
+
+#: src/Log/Initiator.php:49
+msgid "Unknown"
+msgstr ""
+
+#: src/Log/Initiator.php:53
+msgid "WordPress core"
+msgstr ""
+
+#: src/Log/Privacy.php:31
+#: src/Log/Privacy.php:44
+msgid "WP SMTP Buddy email log"
+msgstr ""
+
+#: src/Log/Privacy.php:73
+msgid "Emails sent by the site"
+msgstr ""
+
+#: src/Log/Privacy.php:93
+msgid "Email sending errors"
+msgstr ""
+
+#: src/Log/Privacy.php:101
+msgid "Error"
+msgstr ""
+
+#: src/Log/Privacy.php:140
+msgid "When this site sends an email (for example an order confirmation, a password reset or a contact form notification), a copy is kept in an email log: the recipient addresses, subject, delivery status and, depending on the settings, the message content. Log entries are deleted automatically after the retention period set by the site owner. You can ask for an export or deletion of the emails sent to you."
+msgstr ""
+
+#: src/Log/Resender.php:31
+msgid "Email not found."
+msgstr ""
+
+#: src/Log/Resender.php:38
+msgid "The content of this email was not stored, so it cannot be resent."
+msgstr ""
+
+#: src/Log/Resender.php:47
+msgid "This email has no recipients."
+msgstr ""
+
+#: src/Mail/AbstractOAuthMailer.php:66
+msgid "Client ID"
+msgstr ""
+
+#: src/Mail/AbstractOAuthMailer.php:71
+msgid "Client secret"
+msgstr ""
+
+#: src/Mail/AbstractOAuthMailer.php:78
+msgid "Connection"
+msgstr ""
+
+#. translators: 1: account email, 2: date
+#: src/Mail/AbstractOAuthMailer.php:133
+#, php-format
+msgid "Connected as %1$s since %2$s."
+msgstr ""
+
+#. translators: %s: date
+#: src/Mail/AbstractOAuthMailer.php:135
+#, php-format
+msgid "Connected since %s."
+msgstr ""
+
+#: src/Mail/AbstractOAuthMailer.php:138
+msgid "Disconnect"
+msgstr ""
+
+#: src/Mail/AbstractOAuthMailer.php:141
+msgid "The connection stopped working and must be renewed:"
+msgstr ""
+
+#. translators: %s: provider name (Google, Microsoft)
+#: src/Mail/AbstractOAuthMailer.php:149
+#, php-format
+msgid "Sign in with %s"
+msgstr ""
+
+#: src/Mail/AbstractOAuthMailer.php:152
+msgid "Enter the client ID and client secret, save the settings, and then sign in here."
+msgstr ""
+
+#: src/Mail/AbstractOAuthMailer.php:158
+msgid "Redirect URI to add to your app:"
+msgstr ""
+
+#: src/Mail/AbstractOAuthMailer.php:163
+msgid "This site doesn't use https. Providers only accept https redirect URIs (except for localhost), so signing in won't work until the site uses https."
+msgstr ""
+
+#. translators: %s: provider name
+#: src/Mail/AbstractOAuthMailer.php:167
+#, php-format
+msgid "How to create the %s app"
+msgstr ""
+
+#: src/Mail/EmailControls.php:26
+#: src/Mail/EmailControls.php:31
+msgid "Comments"
+msgstr ""
+
+#: src/Mail/EmailControls.php:27
+msgid "New comment: notify the post author"
+msgstr ""
+
+#: src/Mail/EmailControls.php:32
+msgid "Comment awaiting moderation: notify the moderators"
+msgstr ""
+
+#: src/Mail/EmailControls.php:36
+#: src/Mail/EmailControls.php:41
+#: src/Mail/EmailControls.php:46
+#: src/Mail/EmailControls.php:51
+msgid "Users"
+msgstr ""
+
+#: src/Mail/EmailControls.php:37
+msgid "New user registered: notify the site admin"
+msgstr ""
+
+#: src/Mail/EmailControls.php:42
+msgid "New user registered: send the user their login details"
+msgstr ""
+
+#: src/Mail/EmailControls.php:47
+msgid "Password changed: notify the user"
+msgstr ""
+
+#: src/Mail/EmailControls.php:52
+msgid "Email address changed: notify the user"
+msgstr ""
+
+#: src/Mail/EmailControls.php:56
+#: src/Mail/EmailControls.php:61
+#: src/Mail/EmailControls.php:66
+msgid "Automatic updates"
+msgstr ""
+
+#: src/Mail/EmailControls.php:57
+msgid "WordPress core was updated automatically"
+msgstr ""
+
+#: src/Mail/EmailControls.php:62
+msgid "Plugins were updated automatically"
+msgstr ""
+
+#: src/Mail/EmailControls.php:67
+msgid "Themes were updated automatically"
+msgstr ""
+
+#: src/Mail/Mailers/AmazonSes.php:54
+msgid "Amazon Simple Email Service. Verify your domain in SES and request production access to send to any address."
+msgstr ""
+
+#: src/Mail/Mailers/AmazonSes.php:60
+msgid "Access key ID"
+msgstr ""
+
+#: src/Mail/Mailers/AmazonSes.php:63
+msgid "From an IAM user that only has the ses:SendRawEmail permission."
+msgstr ""
+
+#: src/Mail/Mailers/AmazonSes.php:66
+msgid "Secret access key"
+msgstr ""
+
+#: src/Mail/Mailers/AmazonSes.php:72
+#: src/Mail/Mailers/Mailgun.php:45
+#: src/Mail/Mailers/Mailjet.php:43
+#: src/Mail/Mailers/SendGrid.php:43
+msgid "Region"
+msgstr ""
+
+#: src/Mail/Mailers/AmazonSes.php:76
+msgid "The region where your domain is verified."
+msgstr ""
+
+#: src/Mail/Mailers/AmazonSes.php:79
+msgid "Configuration set"
+msgstr ""
+
+#: src/Mail/Mailers/AmazonSes.php:81
+msgid "Optional. For event publishing (bounces, opens) set up in SES."
+msgstr ""
+
+#: src/Mail/Mailers/Brevo.php:25
+msgid "Brevo, formerly Sendinblue. The From address must be a verified sender or on an authenticated domain."
+msgstr ""
+
+#: src/Mail/Mailers/Brevo.php:31
+#: src/Mail/Mailers/Mailjet.php:31
+#: src/Mail/Mailers/Resend.php:31
+#: src/Mail/Mailers/SendGrid.php:36
+#: src/Mail/Mailers/Smtp2go.php:38
+msgid "API key"
+msgstr ""
+
+#: src/Mail/Mailers/Brevo.php:35
+msgid "Create one under SMTP & API → API Keys. It starts with \"xkeysib-\"."
+msgstr ""
+
+#: src/Mail/Mailers/Gmail.php:30
+msgid "Send through your Google account with secure sign-in (no password stored). Email is sent from the connected account or one of its \"Send mail as\" aliases."
+msgstr ""
+
+#: src/Mail/Mailers/Gmail.php:59
+msgid "Go to console.cloud.google.com and create a project (or pick an existing one)."
+msgstr ""
+
+#: src/Mail/Mailers/Gmail.php:60
+msgid "APIs & Services → Library: enable the \"Gmail API\"."
+msgstr ""
+
+#: src/Mail/Mailers/Gmail.php:61
+msgid "Google Auth Platform → Branding: fill in the app name and support email. Audience: choose \"Internal\" for Google Workspace, or \"External\" for a personal Gmail account."
+msgstr ""
+
+#: src/Mail/Mailers/Gmail.php:62
+msgid "For \"External\" apps: set the publishing status to \"In production\". In \"Testing\" mode Google expires the connection after 7 days. You can ignore the \"unverified app\" warning when you sign in yourself."
+msgstr ""
+
+#: src/Mail/Mailers/Gmail.php:63
+msgid "Data Access: add the scope \".../auth/gmail.send\"."
+msgstr ""
+
+#: src/Mail/Mailers/Gmail.php:64
+msgid "Clients → Create client → \"Web application\". Add the redirect URI shown above under \"Authorized redirect URIs\"."
+msgstr ""
+
+#: src/Mail/Mailers/Gmail.php:65
+msgid "Copy the client ID and client secret into the fields above, save, and click \"Sign in with Google\"."
+msgstr ""
+
+#: src/Mail/Mailers/MailerSend.php:25
+msgid "MailerSend by MailerLite. The From address must be on a verified domain."
+msgstr ""
+
+#: src/Mail/Mailers/MailerSend.php:31
+msgid "API token"
+msgstr ""
+
+#: src/Mail/Mailers/MailerSend.php:35
+msgid "Create one under Integrations → API tokens with \"Email\" full access."
+msgstr ""
+
+#: src/Mail/Mailers/Mailgun.php:26
+msgid "Mailgun by Sinch. Use a sending domain you have verified in Mailgun."
+msgstr ""
+
+#: src/Mail/Mailers/Mailgun.php:32
+msgid "Sending API key"
+msgstr ""
+
+#: src/Mail/Mailers/Mailgun.php:36
+msgid "A domain sending key or your private API key."
+msgstr ""
+
+#: src/Mail/Mailers/Mailgun.php:39
+msgid "Sending domain"
+msgstr ""
+
+#: src/Mail/Mailers/Mailgun.php:42
+msgid "For example mg.example.com."
+msgstr ""
+
+#: src/Mail/Mailers/Mailgun.php:49
+#: src/Mail/Mailers/Mailjet.php:48
+#: src/Mail/Mailers/Smtp2go.php:50
+msgid "US"
+msgstr ""
+
+#: src/Mail/Mailers/Mailgun.php:50
+#: src/Mail/Mailers/Smtp2go.php:51
+msgid "EU"
+msgstr ""
+
+#: src/Mail/Mailers/Mailgun.php:52
+msgid "Must match the region the domain was created in."
+msgstr ""
+
+#: src/Mail/Mailers/Mailjet.php:25
+msgid "Mailjet by Sinch. The From address must be a validated sender or on a validated domain."
+msgstr ""
+
+#: src/Mail/Mailers/Mailjet.php:34
+msgid "Found under Account settings → API Key Management."
+msgstr ""
+
+#: src/Mail/Mailers/Mailjet.php:37
+msgid "Secret key"
+msgstr ""
+
+#: src/Mail/Mailers/Mailjet.php:47
+msgid "Global (EU)"
+msgstr ""
+
+#: src/Mail/Mailers/Mailjet.php:50
+msgid "Choose US only if your account was created on the US infrastructure."
+msgstr ""
+
+#: src/Mail/Mailers/Microsoft365.php:29
+msgid "Send through your Microsoft 365 or Outlook.com account with secure sign-in (no password stored). Email is sent from the connected mailbox."
+msgstr ""
+
+#: src/Mail/Mailers/Microsoft365.php:39
+msgid "Tenant"
+msgstr ""
+
+#: src/Mail/Mailers/Microsoft365.php:42
+msgid "Leave as \"common\" unless the app is single-tenant. Then enter your Directory (tenant) ID."
+msgstr ""
+
+#: src/Mail/Mailers/Microsoft365.php:65
+msgid "Go to entra.microsoft.com → Applications → App registrations → New registration."
+msgstr ""
+
+#: src/Mail/Mailers/Microsoft365.php:66
+msgid "Supported account types: your organization only (single tenant) or any organization. Choose \"any organization and personal accounts\" for Outlook.com."
+msgstr ""
+
+#: src/Mail/Mailers/Microsoft365.php:67
+msgid "Redirect URI: platform \"Web\", and paste the redirect URI shown above."
+msgstr ""
+
+#: src/Mail/Mailers/Microsoft365.php:68
+msgid "API permissions → Add a permission → Microsoft Graph → Delegated → Mail.Send (offline_access, openid and email are added automatically at sign-in). Your admin may need to grant consent."
+msgstr ""
+
+#: src/Mail/Mailers/Microsoft365.php:69
+msgid "Certificates & secrets → New client secret. Copy the secret Value (not the ID). Note when it expires: you'll need a new one then."
+msgstr ""
+
+#: src/Mail/Mailers/Microsoft365.php:70
+msgid "Copy the Application (client) ID and the secret into the fields above. For a single-tenant app, also enter the Directory (tenant) ID. Save and click \"Sign in with Microsoft\"."
+msgstr ""
+
+#: src/Mail/Mailers/PhpMail.php:21
+msgid "Default (PHP mail)"
+msgstr ""
+
+#: src/Mail/Mailers/PhpMail.php:25
+msgid "WordPress default. Unauthenticated, so messages often land in spam. Not recommended."
+msgstr ""
+
+#: src/Mail/Mailers/Postmark.php:25
+msgid "Postmark by ActiveCampaign. The From address needs a confirmed sender signature or verified domain."
+msgstr ""
+
+#: src/Mail/Mailers/Postmark.php:31
+msgid "Server API token"
+msgstr ""
+
+#: src/Mail/Mailers/Postmark.php:35
+msgid "Found under your server → API Tokens."
+msgstr ""
+
+#: src/Mail/Mailers/Postmark.php:38
+msgid "Message stream"
+msgstr ""
+
+#: src/Mail/Mailers/Postmark.php:41
+msgid "Leave as \"outbound\" unless you created a custom transactional stream."
+msgstr ""
+
+#: src/Mail/Mailers/Resend.php:25
+msgid "Resend (resend.com). The From address must be on a domain verified in Resend."
+msgstr ""
+
+#: src/Mail/Mailers/Resend.php:35
+msgid "Create one under API Keys with \"Sending access\". It starts with \"re_\"."
+msgstr ""
+
+#: src/Mail/Mailers/SendGrid.php:30
+msgid "Twilio SendGrid. The From address must be a verified Sender Identity or on an authenticated domain."
+msgstr ""
+
+#: src/Mail/Mailers/SendGrid.php:40
+msgid "Create one under Settings → API Keys with at least \"Mail Send\" access."
+msgstr ""
+
+#: src/Mail/Mailers/SendGrid.php:47
+msgid "Global"
+msgstr ""
+
+#: src/Mail/Mailers/SendGrid.php:48
+msgid "EU (regional subuser)"
+msgstr ""
+
+#: src/Mail/Mailers/Smtp.php:28
+msgid "Other SMTP"
+msgstr ""
+
+#: src/Mail/Mailers/Smtp.php:32
+msgid "Any SMTP server: your host, Google Workspace with an app password, Office 365, Amazon SES SMTP, and more."
+msgstr ""
+
+#: src/Mail/Mailers/Smtp.php:38
+msgid "SMTP host"
+msgstr ""
+
+#: src/Mail/Mailers/Smtp.php:43
+msgid "Encryption"
+msgstr ""
+
+#: src/Mail/Mailers/Smtp.php:48
+msgid "SSL (usually port 465)"
+msgstr ""
+
+#: src/Mail/Mailers/Smtp.php:49
+msgid "TLS / STARTTLS (usually port 587)"
+msgstr ""
+
+#: src/Mail/Mailers/Smtp.php:51
+msgid "TLS is recommended when your server supports it."
+msgstr ""
+
+#: src/Mail/Mailers/Smtp.php:54
+msgid "SMTP port"
+msgstr ""
+
+#: src/Mail/Mailers/Smtp.php:62
+msgid "Auto TLS"
+msgstr ""
+
+#: src/Mail/Mailers/Smtp.php:65
+msgid "With encryption set to None, upgrade to TLS anyway if the server offers it. Turn off only if your server has a broken certificate."
+msgstr ""
+
+#: src/Mail/Mailers/Smtp.php:68
+msgid "Authentication"
+msgstr ""
+
+#: src/Mail/Mailers/Smtp.php:73
+msgid "Username"
+msgstr ""
+
+#: src/Mail/Mailers/Smtp.php:77
+msgid "Password"
+msgstr ""
+
+#: src/Mail/Mailers/Smtp2go.php:32
+msgid "SMTP2GO. The From address must be a verified sender or on a verified sender domain."
+msgstr ""
+
+#: src/Mail/Mailers/Smtp2go.php:42
+msgid "Create one under Sending → API Keys with the \"Emails\" permission. It starts with \"api-\"."
+msgstr ""
+
+#: src/Mail/Mailers/Smtp2go.php:45
+msgid "Endpoint"
+msgstr ""
+
+#: src/Mail/Mailers/Smtp2go.php:49
+msgid "Global (nearest)"
+msgstr ""
+
+#: src/Mail/Mailers/Smtp2go.php:52
+msgid "Australia"
+msgstr ""
+
+#: src/Mail/Mailers/Smtp2go.php:54
+msgid "Pick a region to keep data in that region."
+msgstr ""
+
+#: src/Support/DomainCheck.php:82
+msgid "This is a local or development domain without public DNS, so it can't be checked. Use the domain you send from in production."
+msgstr ""
+
+#: src/Support/DomainCheck.php:141
+msgid "No SPF record found. Add a TXT record starting with \"v=spf1\" that lists the servers allowed to send for this domain."
+msgstr ""
+
+#: src/Support/DomainCheck.php:145
+msgid "There is more than one SPF record. Receivers treat this as an error. Merge them into a single TXT record."
+msgstr ""
+
+#. translators: %s: SPF include mechanism
+#: src/Support/DomainCheck.php:154
+#, php-format
+msgid "An SPF record exists but doesn't include %s. If you send from this domain (not a subdomain), add it as your provider's setup instructions describe."
+msgstr ""
+
+#: src/Support/DomainCheck.php:159
+msgid "SPF record found."
+msgstr ""
+
+#: src/Support/DomainCheck.php:169
+msgid "This provider uses DKIM selectors that can't be checked automatically. Check that the domain shows as verified in the provider's dashboard."
+msgstr ""
+
+#. translators: %s: DKIM selector
+#: src/Support/DomainCheck.php:178
+#, php-format
+msgid "DKIM key found (selector \"%s\")."
+msgstr ""
+
+#. translators: %s: DKIM selector
+#: src/Support/DomainCheck.php:185
+#, php-format
+msgid "DKIM record found (selector \"%s\")."
+msgstr ""
+
+#: src/Support/DomainCheck.php:190
+msgid "No DKIM record found at the usual selectors. Without DKIM, many receivers send email to spam. Follow your provider's domain authentication steps. If you already did, your provider may use a selector this check doesn't know."
+msgstr ""
+
+#. translators: %s: DMARC policy (none, quarantine or reject)
+#: src/Support/DomainCheck.php:204
+#, php-format
+msgid "DMARC record found (policy: %s)."
+msgstr ""
+
+#: src/Support/DomainCheck.php:210
+msgid "No DMARC record found. Gmail and Yahoo expect one. Start with a TXT record at _dmarc with the value \"v=DMARC1; p=none;\"."
+msgstr ""
+
+#: src/Support/ErrorHints.php:31
+msgid "The TLS/SSL handshake failed. The server certificate may be invalid or self-signed, or the encryption type doesn't match the port (SSL ↔ 465, TLS ↔ 587). Try the other encryption option. As a last resort, turn off Auto TLS."
+msgstr ""
+
+#: src/Support/ErrorHints.php:32
+msgid "The SMTP server rejected the username or password. Check them for typos. Gmail and Microsoft 365 require an app password when two-step verification is on, and some providers need SMTP access enabled in the account settings."
+msgstr ""
+
+#: src/Support/ErrorHints.php:33
+msgid "WordPress couldn't reach the SMTP server. Check the host name and port. Many hosts block outgoing ports 25, 465 and 587. Ask your host to open the port, or switch to an API mailer (such as Amazon SES, Brevo, SendGrid or Postmark), which sends over HTTPS."
+msgstr ""
+
+#: src/Support/ErrorHints.php:34
+msgid "The server refused the From address. Most providers only allow sending from the address (or domain) you authenticate with. Set the From Email to that address and turn on \"Force From Email\"."
+msgstr ""
+
+#: src/Support/ErrorHints.php:37
+msgid "The From Email isn't verified in SendGrid. Verify it under Settings → Sender Authentication (single sender or domain authentication), then try again."
+msgstr ""
+
+#: src/Support/ErrorHints.php:38
+msgid "SendGrid rejected the API key. Make sure you copied the whole key and that it has \"Mail Send\" permission."
+msgstr ""
+
+#: src/Support/ErrorHints.php:41
+msgid "Mailgun doesn't know this domain. Check the sending domain spelling and that the Region (US/EU) matches where the domain was created."
+msgstr ""
+
+#: src/Support/ErrorHints.php:42
+msgid "Mailgun rejected the API key. Use a sending key for this domain or your private API key, and check that the Region (US/EU) is right."
+msgstr ""
+
+#: src/Support/ErrorHints.php:45
+msgid "The From Email has no confirmed sender signature in Postmark. Add and confirm it, or verify the whole domain, under Sender Signatures."
+msgstr ""
+
+#: src/Support/ErrorHints.php:46
+msgid "Your Postmark account is pending approval. Until it's approved you can only send to addresses on your own domain."
+msgstr ""
+
+#: src/Support/ErrorHints.php:47
+msgid "Postmark rejected the server token. Use a Server API token (not the Account token)."
+msgstr ""
+
+#: src/Support/ErrorHints.php:50
+msgid "The From Email must be on a domain verified in MailerSend. Verify the domain under Domains, then use an address on it."
+msgstr ""
+
+#: src/Support/ErrorHints.php:51
+msgid "MailerSend rejected the API token. Check that it was copied completely and has Email access."
+msgstr ""
+
+#: src/Support/ErrorHints.php:52
+msgid "MailerSend's sending limit or rate limit was reached. Check your plan's quota in the MailerSend dashboard."
+msgstr ""
+
+#: src/Support/ErrorHints.php:55
+msgid "Amazon SES rejected the address. Verify the From domain (or address) in SES in the selected region. While your account is in the SES sandbox, recipients must be verified too. Request production access to send to anyone."
+msgstr ""
+
+#: src/Support/ErrorHints.php:56
+msgid "AWS rejected the access keys. Check the access key ID and secret access key for typos and that the IAM user is active."
+msgstr ""
+
+#: src/Support/ErrorHints.php:57
+msgid "The IAM user isn't allowed to send. Attach a policy that allows ses:SendRawEmail (or ses:SendEmail)."
+msgstr ""
+
+#: src/Support/ErrorHints.php:58
+msgid "Your SES sending quota or rate was exceeded. Check the limits under Account dashboard in the SES console and request an increase if needed."
+msgstr ""
+
+#: src/Support/ErrorHints.php:59
+msgid "The configuration set doesn't exist in this region. Check its name or leave the field empty."
+msgstr ""
+
+#: src/Support/ErrorHints.php:62
+msgid "Brevo rejected the API key. Use an API key (starts with \"xkeysib-\"), not the SMTP key, and check that it was copied completely."
+msgstr ""
+
+#: src/Support/ErrorHints.php:63
+msgid "The From Email isn't a verified sender in Brevo. Add it under Senders, Domains & Dedicated IPs, or authenticate the domain."
+msgstr ""
+
+#: src/Support/ErrorHints.php:64
+msgid "Your Brevo account can't send transactional email yet. Brevo may need to activate it. Contact Brevo support."
+msgstr ""
+
+#: src/Support/ErrorHints.php:67
+msgid "Mailjet rejected the API key and secret key. Check both, and that the Region matches your account."
+msgstr ""
+
+#: src/Support/ErrorHints.php:68
+msgid "The From Email isn't validated in Mailjet. Add it (or its domain) under Account settings → Sender addresses & domains."
+msgstr ""
+
+#: src/Support/ErrorHints.php:71
+msgid "The From domain isn't verified in Resend. Add and verify it under Domains. Until then, Resend only lets you send to your own address."
+msgstr ""
+
+#: src/Support/ErrorHints.php:72
+msgid "Resend rejected the API key. Use a key with sending access and check that it was copied completely."
+msgstr ""
+
+#: src/Support/ErrorHints.php:75
+msgid "The From Email isn't a verified sender in SMTP2GO. Verify the domain or address under Sending → Verified Senders."
+msgstr ""
+
+#: src/Support/ErrorHints.php:76
+msgid "SMTP2GO rejected the API key. Check that it was copied completely and has permission to send emails."
+msgstr ""
+
+#: src/Support/ErrorHints.php:79
+msgid "Google no longer accepts the saved sign-in. It was revoked, the password changed, or the app is in \"Testing\" mode (connections expire after 7 days there). Set the app to \"In production\" and sign in again."
+msgstr ""
+
+#: src/Support/ErrorHints.php:80
+msgid "The Gmail API is not enabled in your Google Cloud project. Enable it under APIs & Services → Library → Gmail API, wait a minute, and try again."
+msgstr ""
+
+#: src/Support/ErrorHints.php:81
+msgid "Google rejected the client ID or secret. Copy both again from the Google Cloud console (Clients → your web client)."
+msgstr ""
+
+#: src/Support/ErrorHints.php:82
+msgid "The connection doesn't have permission to send email. Add the gmail.send scope to the app, then disconnect and sign in again."
+msgstr ""
+
+#: src/Support/ErrorHints.php:83
+msgid "Gmail is not enabled for this Google account. In Google Workspace, an admin must turn on Gmail for the user."
+msgstr ""
+
+#: src/Support/ErrorHints.php:86
+msgid "Microsoft no longer accepts the saved sign-in (expired or revoked, for example after a password change). Sign in again."
+msgstr ""
+
+#: src/Support/ErrorHints.php:87
+msgid "Microsoft rejected the client secret. It may have expired. Create a new secret under Certificates & secrets, copy its Value (not the ID), save, and sign in again."
+msgstr ""
+
+#: src/Support/ErrorHints.php:88
+msgid "The app may not send email for this mailbox. Add the Microsoft Graph delegated permission Mail.Send, have an admin grant consent if required, then sign in again."
+msgstr ""
+
+#: src/Support/ErrorHints.php:89
+msgid "This account has no Exchange Online mailbox (or no license that includes one). Use an account with a Microsoft 365 mailbox."
+msgstr ""
+
+#: src/Support/ErrorHints.php:90
+msgid "The mailbox isn't allowed to send as the From Email. Set the From Email to the connected account, or give it \"Send As\" permission in Exchange."
+msgstr ""
+
+#: src/Support/ErrorHints.php:93
+msgid "The request to the email service timed out. Your server may block outgoing HTTPS requests, or the service is having an outage."
+msgstr ""
+
+#: src/Support/ErrorHints.php:94
+msgid "Your server couldn't resolve the email service's host name. This is a DNS problem on the server. Contact your host."
+msgstr ""
+
+#: src/Support/ErrorHints.php:95
+msgid "Sign in to the account in the mailer settings (Connection → Sign in)."
+msgstr ""
+
+#: src/Support/ErrorHints.php:96
+msgid "An email address is invalid. Check the From Email setting and the recipient address."
+msgstr ""
+
+#: src/Support/SettingsTransfer.php:69
+msgid "This is not a WP SMTP Buddy settings file."
+msgstr ""
+
+#: src/Support/SiteHealth.php:71
+msgid "Email mailer"
+msgstr ""
+
+#: src/Support/SiteHealth.php:75
+msgid "Email delivery"
+msgstr ""
+
+#: src/Support/SiteHealth.php:79
+msgid "Email queue"
+msgstr ""
+
+#: src/Support/SiteHealth.php:83
+msgid "Email domain authentication"
+msgstr ""
+
+#: src/Support/SiteHealth.php:102
+msgid "Email is sent with PHP mail()"
+msgstr ""
+
+#: src/Support/SiteHealth.php:103
+msgid "PHP mail() is unauthenticated, so emails from this site often end up in spam or never arrive. Choose an SMTP server or an email service in WP SMTP Buddy."
+msgstr ""
+
+#. translators: %s: mailer name
+#: src/Support/SiteHealth.php:112
+#, php-format
+msgid "%s is not fully configured"
+msgstr ""
+
+#: src/Support/SiteHealth.php:113
+msgid "Required settings are missing, so email is sent with PHP mail() instead."
+msgstr ""
+
+#. translators: %s: mailer name
+#: src/Support/SiteHealth.php:121
+#, php-format
+msgid "Email is sent with %s"
+msgstr ""
+
+#: src/Support/SiteHealth.php:122
+msgid "WordPress email goes through an authenticated mailer."
+msgstr ""
+
+#: src/Support/SiteHealth.php:136
+msgid "The most recent email failed to send"
+msgstr ""
+
+#. translators: 1: email subject, 2: error message
+#: src/Support/SiteHealth.php:138
+#, php-format
+msgid "\"%1$s\" could not be sent: %2$s"
+msgstr ""
+
+#: src/Support/SiteHealth.php:149
+msgid "An email failed to send in the last 24 hours"
+msgstr ""
+
+#: src/Support/SiteHealth.php:158
+msgid "No recent email delivery errors"
+msgstr ""
+
+#: src/Support/SiteHealth.php:159
+msgid "Recent emails were accepted by the mailer."
+msgstr ""
+
+#: src/Support/SiteHealth.php:174
+msgid "Queued emails are not being sent"
+msgstr ""
+
+#. translators: 1: number of emails, 2: time span
+#: src/Support/SiteHealth.php:177
+#, php-format
+msgid "%1$d emails are waiting, the oldest for %2$s. WP-Cron may not be running: check that DISABLE_WP_CRON isn't set without a server cron job, or set one up to call wp-cron.php every minute."
+msgstr ""
+
+#: src/Support/SiteHealth.php:187
+msgid "The email queue is running"
+msgstr ""
+
+#: src/Support/SiteHealth.php:187
+msgid "Emails are sent immediately"
+msgstr ""
+
+#. translators: %d: number of emails
+#: src/Support/SiteHealth.php:189
+#, php-format
+msgid "%d emails are waiting in the queue."
+msgstr ""
+
+#. translators: %s: domain name
+#: src/Support/SiteHealth.php:211
+#, php-format
+msgid "Email authentication can't be checked for %s"
+msgstr ""
+
+#. translators: %s: domain name
+#: src/Support/SiteHealth.php:222
+#, php-format
+msgid "Email authentication is set up for %s"
+msgstr ""
+
+#. translators: %s: domain name
+#: src/Support/SiteHealth.php:224
+#, php-format
+msgid "Email authentication for %s could be improved"
+msgstr ""
+
+#: src/Support/SiteHealth.php:245
+msgid "Version"
+msgstr ""
+
+#: src/Support/SiteHealth.php:250
+msgid "not configured"
+msgstr ""
+
+#: src/Support/SiteHealth.php:260
+#: src/Support/SiteHealth.php:268
+msgid "Off"
+msgstr ""
+
+#: src/Support/SiteHealth.php:267
+msgid "Background sending"
+msgstr ""
+
+#: src/Support/SiteHealth.php:271
+msgid "Settings scope"
+msgstr ""
+
+#: src/Support/SiteHealth.php:275
+msgid "Constants in wp-config.php"
+msgstr ""
+
+#: src/Support/SiteHealth.php:279
+msgid "Database version"
+msgstr ""
+
+#: src/Support/SiteHealth.php:304
+msgid "Open WP SMTP Buddy"
+msgstr ""
+
+#. translators: %s: site name
+#: src/Support/TestEmail.php:42
+#, php-format
+msgid "WP SMTP Buddy test email from %s"
+msgstr ""
+
+#. translators: 1: mailer name, 2: site URL, 3: date and time
+#: src/Support/TestEmail.php:66
+#, php-format
+msgid ""
+"Congratulations! WP SMTP Buddy is working.\n"
+"\n"
+"This test email was sent with: %1$s\n"
+"Site: %2$s\n"
+"Sent: %3$s"
+msgstr ""
+
+#: src/Support/TestEmail.php:92
+msgid "It works!"
+msgstr ""
+
+#: src/Support/TestEmail.php:93
+msgid "WP SMTP Buddy delivered this test email. Your WordPress site can send email."
+msgstr ""
+
+#: wp-smtp-buddy.php:33
+msgid "WP SMTP Buddy requires PHP 8.1 or newer. The plugin is inactive until PHP is upgraded."
+msgstr ""
