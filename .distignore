@@ -1,0 +1,13 @@
+.git/
+.github/
+.distignore
+dist/
+tests/
+bin/
+.phpunit.cache/
+composer.json
+composer.lock
+phpcs.xml.dist
+phpstan.neon.dist
+phpunit.xml.dist
+.DS_Store

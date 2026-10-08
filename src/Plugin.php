@@ -19,6 +19,7 @@ use SmtpBuddy\Mail\Queue;
 use SmtpBuddy\Mail\Registry;
 use SmtpBuddy\Mail\Sender;
 use SmtpBuddy\Support\DomainCheck;
+use SmtpBuddy\Support\GitHubUpdater;
 use SmtpBuddy\Support\SiteHealth;
 use SmtpBuddy\Support\TestEmail;
 
@@ -53,6 +54,7 @@ final class Plugin {
 	}
 
 	public function boot(): void {
+		( new GitHubUpdater() )->register();
 		( new Interceptor( $this->options, $this->registry ) )->register();
 		$this->email_logger->register();
 		$this->queue->register();
